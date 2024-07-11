@@ -6,21 +6,39 @@ body {
     background-color: #eae6f8;
     color: #333;
 }
+*{
+    text-decoration: none;
+}
+.logo{
+    color: white;
+    cursor: pointer;
+}
 
 ::-webkit-scrollbar {
     display: none;
 }
 
 header {
-    background-color: #6b46c1;
+    background-color: rgba(107, 70, 193, 0.9); /* Slightly transparent background */
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     flex-direction: row;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    
+    transition: background-color 0.3s, backdrop-filter 0.3s; /* Smooth transition */
 }
+
+header.scrolled {
+    background-color: rgba(107, 70, 193, 0.8); /* Adjust background transparency when scrolled */
+    backdrop-filter: blur(15px); /* Increase blur effect when scrolled */
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+}
+
 
 * {
     list-style: none;
@@ -43,7 +61,7 @@ nav ul {
     list-style: none;
     display: flex;
 
-    gap: 1rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
 }
@@ -65,6 +83,39 @@ nav ul li a.apply {
     background-color: #9f7aea;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+}
+.blink::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(255, 185, 7);
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    animation: blink 2.5s infinite;
+    transform: translateY(-10px);
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    #menu {
+        flex-direction: column;
+        display: none;
+    }
+    #menu.show {
+        display: flex;
+    }
 }
 
 main {
@@ -189,24 +240,6 @@ button:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    form {
-        width: 100%;
-    }
-}
 
 footer {
     background-color: #333;
@@ -285,4 +318,26 @@ footer {
 .footer-bottom p {
     font-size: 0.9em;
     margin: 0;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+    .blink::after {
+        margin-left: 0.3rem;      
+        transform: translateY(-12px);
+    }
 }

@@ -12,8 +12,11 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
     <header>
-        <div class="logo" id="logo">Cipher Softwares</div>
+      <a href="index.html" class="logo" id="logo">Cipher Softwares</a>
         <nav>
 
             <button class="hamburger" onclick="toggleMenu()">
@@ -24,9 +27,9 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="internships.html">Internships</a></li>
+                <li><a href="internships.html" class="blink">Internships</a></li>
                 <li><a href="reachus.html">Reach Us</a></li>
-                <li><a href="#" class="apply">Apply Now</a></li>
+                <li><a href="https://forms.gle/Cpy2ogGKHDg9DhxK8" class="apply">Apply Now</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +39,7 @@
             <h1>Explore Without Limitations With <span>Cipher Softwares</span></h1>
             <p>We ensure lifetime support of all applications we've built. Our support department is a team of
                 professionals who will assist you 24/7.</p>
-            <button>Get Started</button>
+            <a href="internships.html"><button>Get Started</button></a>
         </div>
         <div class="hero-image">
             <img src="Rectangle 5.png" alt="Hero Image">
@@ -105,7 +108,19 @@
             <button>SUBMIT</button>
         </div>
     </section>
-
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p>Welcome to our website. <br> 
+                
+            We are <b style="color: blueviolet;">HIRING!!</b><br>
+            Your Door To Opportunity! 
+        </p>
+            <a href="internships.html">
+                <button>HAVE A TOUR</button>
+            </a>
+        </div>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -120,7 +135,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="internships.html">Internships</a></li>
                     <li><a href="reachus.html">Reach Us</a></li>
-                    <li><a href="#" class="apply">Apply Now</a></li>
+                    <li><a href="https://forms.gle/Cpy2ogGKHDg9DhxK8" class="apply">Apply Now</a></li>
                 </ul>
             </div>
             <div class="footer-section">
