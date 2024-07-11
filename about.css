@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEAFD;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    background-color: #6b46c1;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+   
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a.apply {
+    text-shadow: 0.1px 0.1px #000000;;
+    background-color: #9f7aea;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.company, .vision {
+    margin-bottom: 40px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #6b46c1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+     nav ul {
+        flex-direction: column;
+        justify-content: start;
+        margin-left: -280px;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
