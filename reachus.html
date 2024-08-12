@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cipher Softwares</title>
+    <link rel="icon" type="image/svg+xml" href="./logo2.png" />
     <link rel="stylesheet" href="reachus.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/266833c2f6.js" crossorigin="anonymous" defer></script>
@@ -13,16 +14,20 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9025YKZM1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-G9025YKZM1',{
-    'allowAdFeatures': true});
+    gtag('config', 'G-G9025YKZM1', {
+        'allowAdFeatures': true
+    });
 </script>
+
 <body>
     <header>
-        <a href="index.html"><div class="logo" id="logo">Cipher Softwares</div></a>
+        <a href="index.html">
+            <div class="logo" id="logo">Cipher Softwares</div>
+        </a>
         <nav>
             <!-- <div class="logo">Cipher Softwares</div> -->
             <button class="hamburger" onclick="toggleMenu()">
@@ -45,7 +50,7 @@
             <p>If you have any questions or need further information, feel free to reach out to us via the form below or
                 email us at <a href="mailto:contact.ciphersoftwares@gmail.com">contact.ciphersoftwares@gmail.com</a>.
             </p>
-            <form action="submit-form.php" method="post">
+            <form action="https://formspree.io/f/mkgwbkrk" method="post" onsubmit="return handleSubmit(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -85,7 +90,8 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/cipher-softwares/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/cipher-softwares/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                     <a href="https://t.me/ciphersoftwares"><i class="fa-brands fa-telegram"></i></a>
                 </div>
             </div>
