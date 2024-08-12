@@ -9,9 +9,19 @@
     <script src="https://kit.fontawesome.com/266833c2f6.js" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9025YKZM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9025YKZM1',{
+    'allowAdFeatures': true});
+</script>
 <body>
     <header>
-        <div class="logo" id="logo">Cipher Softwares</div>
+        <a href="index.html"><div class="logo" id="logo">Cipher Softwares</div></a>
         <nav>
             <!-- <div class="logo">Cipher Softwares</div> -->
             <button class="hamburger" onclick="toggleMenu()">
@@ -22,9 +32,9 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="internships.html">Internships</a></li>
+                <li><a href="internships.html" class="blink">Internships</a></li>
                 <li><a href="reachus.html">Reach Us</a></li>
-                <li><a href="#" class="apply">Apply Now</a></li>
+                <li><a href="https://forms.gle/Cpy2ogGKHDg9DhxK8" class="apply">Apply Now</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +67,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="internships.html">Internships</a></li>
                     <li><a href="reachus.html">Reach Us</a></li>
-                    <li><a href="#" class="apply">Apply Now</a></li>
+                    <li><a href="https://forms.gle/Cpy2ogGKHDg9DhxK8" class="apply">Apply Now</a></li>
                 </ul>
             </div>
             <div class="footer-section">
