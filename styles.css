@@ -38,7 +38,8 @@ header {
     align-items: center;
     color: white;
     flex-direction: row;
-
+    position: sticky;
+    top: 0;
 }
 
 
@@ -198,7 +199,7 @@ nav ul li a.apply {
     font-size: 1.25rem;
 }
 
-.testimonial p{
+.testimonial p {
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;

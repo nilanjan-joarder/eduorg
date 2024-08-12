@@ -1,6 +1,6 @@
 let menu = document.getElementById('menu');
 let logo = document.getElementById('logo');
-console.log(logo);
+let header = document.getElementById('header');
 
 function toggleMenu() {
     if (menu.style.display === "flex") {

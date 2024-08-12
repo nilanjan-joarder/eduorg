@@ -19,7 +19,8 @@ header {
     align-items: center;
     color: white;
     flex-direction: row;
-
+    position: sticky;
+    top: 0;
 }
 
 * {
