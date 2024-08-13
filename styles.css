@@ -79,6 +79,7 @@ header {
     color: white;
     flex-direction: row;
     position: sticky;
+    top: 0;    position: sticky;
     top: 0;
     z-index: 1000; /* Ensures the header stays on top of other content */
     
@@ -283,7 +284,7 @@ nav ul li a.apply {
     font-size: 1.25rem;
 }
 
-.testimonial p{
+.testimonial p {
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
